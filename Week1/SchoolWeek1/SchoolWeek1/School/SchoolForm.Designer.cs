@@ -39,7 +39,7 @@
             this.buttonSchoolYearTeacher = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelStudent = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.studentLabel = new System.Windows.Forms.Label();
             this.richTextBoxLog = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -134,7 +134,7 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.labelStudent);
-            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.studentLabel);
             this.panel2.Location = new System.Drawing.Point(12, 124);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(144, 94);
@@ -149,14 +149,14 @@
             this.labelStudent.TabIndex = 1;
             this.labelStudent.Text = "name:";
             // 
-            // label20
+            // studentLabel
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(10, 4);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 13);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "student start";
+            this.studentLabel.AutoSize = true;
+            this.studentLabel.Location = new System.Drawing.Point(10, 4);
+            this.studentLabel.Name = "studentLabel";
+            this.studentLabel.Size = new System.Drawing.Size(65, 13);
+            this.studentLabel.TabIndex = 0;
+            this.studentLabel.Text = "student start";
             // 
             // richTextBoxLog
             // 
@@ -203,7 +203,7 @@
         private System.Windows.Forms.Button buttonSchoolYearTeacher;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelStudent;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label studentLabel;
         private System.Windows.Forms.RichTextBox richTextBoxLog;
     }
 }
