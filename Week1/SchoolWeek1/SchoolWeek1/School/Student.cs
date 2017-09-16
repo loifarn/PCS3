@@ -16,7 +16,10 @@ namespace School
         private int ec;
 
         public Student(string name, int pcn, int age, string country) {
-
+            this.name = name;
+            this.pcn = pcn;
+            this.age = age;
+            this.country = country;
         }
 
         public void StartAnotherSchoolYear()

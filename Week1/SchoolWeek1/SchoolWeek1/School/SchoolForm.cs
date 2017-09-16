@@ -13,13 +13,16 @@ namespace School
     public partial class Form1 : Form
     {
         private Teacher teacher;
+        private Student student;
+
 
         public Form1()
         {
             InitializeComponent();
             teacher = new Teacher("Edna Krabappel", 111111, 36, Function.DOCENT_1, 1500); // create a teacher
-
+            student = new Student("Bob Burger", 222222, 42, "America");
             LogTeacherChange("start");
+            LogStudentChange("start");
         }
 
 
@@ -27,6 +30,12 @@ namespace School
         {
             this.richTextBoxLog.AppendText("\n*********************** " + operationName);
             this.richTextBoxLog.AppendText("\n"+teacher.InfoString());
+        }
+
+        private void LogStudentChange(string operationName)
+        {
+            this.richTextBoxLog.AppendText("\n*********************** "+ operationName);
+            this.richTextBoxLog.AppendText("\n" + student.InfoString());
         }
 
 
