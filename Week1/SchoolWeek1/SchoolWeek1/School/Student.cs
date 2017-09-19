@@ -34,7 +34,7 @@ namespace School
 
         public string InfoString()
         {
-            return $"{name} {pcn}\nAge: {age}, {yearsAtFontys} years at Fontys\nCountry: {country}\nEC's: {ec}";
+            return $"{name} ({pcn})\nAge: {age}, {yearsAtFontys} years at Fontys\nCountry: {country}\nEC's: {ec}";
         }
 
         public void AddOneModuleEC()

@@ -53,6 +53,7 @@
             this.buttonSchoolYearStudent.TabIndex = 5;
             this.buttonSchoolYearStudent.Text = "another school year";
             this.buttonSchoolYearStudent.UseVisualStyleBackColor = true;
+            this.buttonSchoolYearStudent.Click += new System.EventHandler(this.buttonSchoolYearStudent_Click);
             // 
             // buttonBirthdayStudent
             // 
@@ -62,6 +63,7 @@
             this.buttonBirthdayStudent.TabIndex = 7;
             this.buttonBirthdayStudent.Text = "celebrate birthday!";
             this.buttonBirthdayStudent.UseVisualStyleBackColor = true;
+            this.buttonBirthdayStudent.Click += new System.EventHandler(this.buttonBirthdayStudent_Click);
             // 
             // buttonAddModule
             // 
@@ -71,6 +73,7 @@
             this.buttonAddModule.TabIndex = 9;
             this.buttonAddModule.Text = "add module ec\'s";
             this.buttonAddModule.UseVisualStyleBackColor = true;
+            this.buttonAddModule.Click += new System.EventHandler(this.buttonAddModule_Click);
             // 
             // panel1
             // 

@@ -23,6 +23,9 @@ namespace School
             student = new Student("Bob Burger", 222222, 42, "America");
             LogTeacherChange("start");
             LogStudentChange("start");
+
+            labelStudent.Text = student.InfoString();
+            labelTeacher.Text = teacher.InfoString();
         }
 
 
@@ -55,6 +58,24 @@ namespace School
         {
             teacher.Promote();
             LogTeacherChange("promotion");
+        }
+
+        private void buttonSchoolYearStudent_Click(object sender, EventArgs e)
+        {
+            student.StartAnotherSchoolYear();
+            LogStudentChange("another school year");
+        }
+
+        private void buttonBirthdayStudent_Click(object sender, EventArgs e)
+        {
+            student.CelebrateBirthday();
+            LogStudentChange("birthday");
+        }
+
+        private void buttonAddModule_Click(object sender, EventArgs e)
+        {
+            student.AddOneModuleEC();
+            LogStudentChange("module EC");
         }
     }
 }
