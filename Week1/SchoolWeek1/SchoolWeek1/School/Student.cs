@@ -11,22 +11,22 @@ namespace School
         private string Country;
         private int ec;
 
-        public Student(string name, int pcn, int age, string country) :base(name, pcn, age ){
+        public Student(string name, string address, int pcn, int age, string country) :base(name, address, pcn, age ){
             this.Name = name;
             this.PCN = pcn;
             this.Age = age;
             this.Country = country;
+            this.Address = address;
         }
 
         public string InfoString()
         {
-            return $"{Name} ({PCN})\nAge: {Age}, {YearsAtFontys} years at Fontys\nCountry: {Country}\nEC's: {ec}";
+            return $"{Name} ({PCN})\nAge: {Age}, {YearsAtFontys} years at Fontys\nAddress: {Address}\nCountry: {Country}\nEC's: {ec}";
         }
 
         public void AddOneModuleEC()
         {
             ec+=3;
         }
-
     }
 }

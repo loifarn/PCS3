@@ -41,13 +41,15 @@
             this.labelStudent = new System.Windows.Forms.Label();
             this.studentLabel = new System.Windows.Forms.Label();
             this.richTextBoxLog = new System.Windows.Forms.RichTextBox();
+            this.teacherAddress = new System.Windows.Forms.Button();
+            this.studentAddress = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonSchoolYearStudent
             // 
-            this.buttonSchoolYearStudent.Location = new System.Drawing.Point(172, 128);
+            this.buttonSchoolYearStudent.Location = new System.Drawing.Point(172, 176);
             this.buttonSchoolYearStudent.Name = "buttonSchoolYearStudent";
             this.buttonSchoolYearStudent.Size = new System.Drawing.Size(110, 23);
             this.buttonSchoolYearStudent.TabIndex = 5;
@@ -57,7 +59,7 @@
             // 
             // buttonBirthdayStudent
             // 
-            this.buttonBirthdayStudent.Location = new System.Drawing.Point(172, 161);
+            this.buttonBirthdayStudent.Location = new System.Drawing.Point(172, 209);
             this.buttonBirthdayStudent.Name = "buttonBirthdayStudent";
             this.buttonBirthdayStudent.Size = new System.Drawing.Size(110, 23);
             this.buttonBirthdayStudent.TabIndex = 7;
@@ -67,7 +69,7 @@
             // 
             // buttonAddModule
             // 
-            this.buttonAddModule.Location = new System.Drawing.Point(172, 194);
+            this.buttonAddModule.Location = new System.Drawing.Point(172, 242);
             this.buttonAddModule.Name = "buttonAddModule";
             this.buttonAddModule.Size = new System.Drawing.Size(110, 23);
             this.buttonAddModule.TabIndex = 9;
@@ -138,7 +140,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.labelStudent);
             this.panel2.Controls.Add(this.studentLabel);
-            this.panel2.Location = new System.Drawing.Point(12, 124);
+            this.panel2.Location = new System.Drawing.Point(12, 172);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(144, 94);
             this.panel2.TabIndex = 13;
@@ -169,11 +171,33 @@
             this.richTextBoxLog.TabIndex = 16;
             this.richTextBoxLog.Text = "";
             // 
+            // teacherAddress
+            // 
+            this.teacherAddress.Location = new System.Drawing.Point(172, 112);
+            this.teacherAddress.Name = "teacherAddress";
+            this.teacherAddress.Size = new System.Drawing.Size(110, 23);
+            this.teacherAddress.TabIndex = 17;
+            this.teacherAddress.Text = "show address";
+            this.teacherAddress.UseVisualStyleBackColor = true;
+            this.teacherAddress.Click += new System.EventHandler(this.teacherAddress_Click);
+            // 
+            // studentAddress
+            // 
+            this.studentAddress.Location = new System.Drawing.Point(172, 271);
+            this.studentAddress.Name = "studentAddress";
+            this.studentAddress.Size = new System.Drawing.Size(110, 23);
+            this.studentAddress.TabIndex = 18;
+            this.studentAddress.Text = "show address";
+            this.studentAddress.UseVisualStyleBackColor = true;
+            this.studentAddress.Click += new System.EventHandler(this.studentAddress_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 586);
+            this.Controls.Add(this.studentAddress);
+            this.Controls.Add(this.teacherAddress);
             this.Controls.Add(this.richTextBoxLog);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.buttonPromote);
@@ -208,6 +232,8 @@
         private System.Windows.Forms.Label labelStudent;
         private System.Windows.Forms.Label studentLabel;
         private System.Windows.Forms.RichTextBox richTextBoxLog;
+        private System.Windows.Forms.Button teacherAddress;
+        private System.Windows.Forms.Button studentAddress;
     }
 }
 

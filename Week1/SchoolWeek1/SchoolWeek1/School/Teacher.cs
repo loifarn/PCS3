@@ -33,7 +33,7 @@ namespace School
         /// <param name="age">Age of the teacher.</param>
         /// <param name="function">Function of the teacher.</param>
         /// <param name="salary">Monthly salary of the teacher.</param>
-        public Teacher(string name, int pcn, int age, Function function, int salary) :base(name, pcn, age )
+        public Teacher(string name, string address, int pcn, int age, Function function, int salary) :base(name, address, pcn, age )
         {
             this.Name = name;
             this.PCN = pcn;
@@ -41,6 +41,7 @@ namespace School
             this.YearsAtFontys = 0;
             this.Function = function;
             this.Salary = salary;
+            this.Address = address;
         }
 
         /// <summary>
@@ -55,7 +56,7 @@ namespace School
             string info = "";
             info += this.Name + " (" + this.PCN.ToString() + ")";
             info += "\nage " + this.Age.ToString() + ", " + this.YearsAtFontys.ToString() + " years at Fontys";
-
+            info += $"\nAddress: {Address}";
             info += "\nfunction:\t" + this.Function.ToString();
             info += "\nsalary:\t" + this.Salary.ToString();
 

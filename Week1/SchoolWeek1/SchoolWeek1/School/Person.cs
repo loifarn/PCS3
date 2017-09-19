@@ -8,17 +8,19 @@ namespace School
 {
     class Person
     {
-
+        
         protected string Name;
+        protected string Address;
         protected int PCN;
         protected int Age;
         protected int YearsAtFontys;
 
-        public Person(string name, int pcn, int age)
+        public Person(string name, string address, int pcn, int age)
         {
             this.Name = name;
             this.PCN = pcn;
             this.Age = age;
+            this.Address = address;
         }
 
 
@@ -30,6 +32,10 @@ namespace School
         public void CelebrateBirthday()
         {
             Age++;
+        }
+        public virtual string getAddress()
+        {
+            return this.Address;
         }
     }
 }

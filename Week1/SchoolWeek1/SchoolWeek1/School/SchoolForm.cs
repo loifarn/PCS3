@@ -19,8 +19,8 @@ namespace School
         public Form1()
         {
             InitializeComponent();
-            teacher = new Teacher("Edna Krabappel", 111111, 36, Function.DOCENT_1, 1500); // create a teacher
-            student = new Student("Bob Burger", 222222, 42, "America");
+            teacher = new Teacher("Edna Krabappel", "road 1234", 111111, 36, Function.DOCENT_1, 1500); // create a teacher
+            student = new Student("Bob Burger", "road 412", 222222, 42, "America");
             LogTeacherChange("start");
             LogStudentChange("start");
 
@@ -76,6 +76,16 @@ namespace School
         {
             student.AddOneModuleEC();
             LogStudentChange("module EC");
+        }
+
+        private void teacherAddress_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Teacher address: "+ teacher.getAddress());
+        }
+
+        private void studentAddress_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Student address: " + student.getAddress());
         }
     }
 }
