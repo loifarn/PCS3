@@ -19,7 +19,7 @@ namespace School
             this.Address = address;
         }
 
-        public string InfoString()
+        public override string InfoString()
         {
             return $"{Name} ({PCN})\nAge: {Age}, {YearsAtFontys} years at Fontys\nAddress: {Address}\nCountry: {Country}\nEC's: {ec}";
         }

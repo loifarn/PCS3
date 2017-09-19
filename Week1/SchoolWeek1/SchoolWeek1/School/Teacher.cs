@@ -51,16 +51,10 @@ namespace School
         ///  function: DOCENT_1
         ///  salary:   15000"
         /// </summary>
-        public string InfoString()
+        public override string InfoString()
         {
-            string info = "";
-            info += this.Name + " (" + this.PCN.ToString() + ")";
-            info += "\nage " + this.Age.ToString() + ", " + this.YearsAtFontys.ToString() + " years at Fontys";
-            info += $"\nAddress: {Address}";
-            info += "\nfunction:\t" + this.Function.ToString();
-            info += "\nsalary:\t" + this.Salary.ToString();
-
-            return info;
+            return $"{Name} ({PCN})\nAge: {Age}, {YearsAtFontys} years at Fontys\nAddress: {Address}\n" +
+                $"Function: {function.ToString()}\nSalary: {salary}";
         }
 
         /// <summary>

@@ -37,5 +37,10 @@ namespace School
         {
             return this.Address;
         }
+
+        public virtual string InfoString()
+        {
+            return $"{Name} ({PCN})\nAge: {Age}, {YearsAtFontys} years at Fontys\nAddress: {Address}\n";
+        }
     }
 }
