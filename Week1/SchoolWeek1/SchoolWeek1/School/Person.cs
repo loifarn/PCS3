@@ -24,7 +24,7 @@ namespace School
         }
 
 
-        public void StartAnotherSchoolYear()
+        public virtual void StartAnotherSchoolYear()
         {
             YearsAtFontys++;
         }

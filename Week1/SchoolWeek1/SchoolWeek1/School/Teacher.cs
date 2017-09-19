@@ -72,5 +72,14 @@ namespace School
             if (function < Function.DIRECTOR)
                 function++;
         }
+
+        public override void StartAnotherSchoolYear()
+        {
+            base.StartAnotherSchoolYear();
+            if (YearsAtFontys % 3 == 0)
+            {
+                salary = salary * 1.1;
+            }
+        }
     }
 }
