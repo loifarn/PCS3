@@ -9,28 +9,27 @@ namespace School
     class Person
     {
 
-        private string name;
-        private string person;
-        private string pcn;
-        private int age;
-        private int yearsAtFontys;
+        protected string Name;
+        protected int PCN;
+        protected int Age;
+        protected int YearsAtFontys;
 
-        public Person(string name, string pcn, int age)
+        public Person(string name, int pcn, int age)
         {
-            this.name = name;
-            this.pcn = pcn;
-            this.age = age;
+            this.Name = name;
+            this.PCN = pcn;
+            this.Age = age;
         }
 
 
         public void StartAnotherSchoolYear()
         {
-            yearsAtFontys++;
+            YearsAtFontys++;
         }
 
         public void CelebrateBirthday()
         {
-            age++;
+            Age++;
         }
     }
 }

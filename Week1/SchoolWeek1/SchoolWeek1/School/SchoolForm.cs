@@ -44,13 +44,13 @@ namespace School
 
         private void buttonSchoolYearTeacher_Click(object sender, EventArgs e)
         {
-            teacher.AnotherSchoolYear();
+            teacher.StartAnotherSchoolYear();
             LogTeacherChange("another school year");
         }
 
         private void buttonBirthdayTeacher_Click(object sender, EventArgs e)
         {
-            teacher.CelebrateBirthDay();
+            teacher.CelebrateBirthday();
             LogTeacherChange("birthday");
         }
 
