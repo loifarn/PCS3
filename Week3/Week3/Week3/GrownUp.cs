@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace Week3
 {
-    class GrownUp : ISomeone
+    class GrownUp : Human
     {
         private string Name;
 
-        public GrownUp(string name)
+        public GrownUp(string name) : base(name)
         {
             this.Name = name;
         }
 
-        public string IntroduceYourself()
-        {
-            return this.Name;
-        }
-
-        public string SayGoodMorning(int weekDay)
+        public override string SayGoodMorning(int weekDay)
         {
             if (weekDay < 6)
             {
@@ -36,7 +31,7 @@ namespace Week3
             }
         }
 
-        public string SayGoodNight(int hour)
+        public override string SayGoodNight(int hour)
         {
             if (hour > 23)
             {

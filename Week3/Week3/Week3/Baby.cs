@@ -6,26 +6,22 @@ using System.Threading.Tasks;
 
 namespace Week3
 {
-    class Baby : ISomeone
+    class Baby : Human
     {
         private string Name;
 
-        public Baby(string name)
+        public Baby(string name) :base(name)
         {
             this.Name = name;
         }
 
-        public string IntroduceYourself()
-        {
-            return this.Name;
-        }
 
-        public string SayGoodMorning(int weekDay)
+        public override string SayGoodMorning(int weekDay)
         {
             return $"UUUUUU, {this.Name} is hungryyyyy";
         }
 
-        public string SayGoodNight(int hour)
+        public override string SayGoodNight(int hour)
         {
             return $"UUUUUU, {this.Name} is hungryyyyy";
         }

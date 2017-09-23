@@ -54,6 +54,7 @@
       <DependentUpon>FamilyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GrownUp.cs" />
+    <Compile Include="Human.cs" />
     <Compile Include="ISomeone.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
