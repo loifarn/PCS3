@@ -50,6 +50,10 @@ namespace Week4
                 else
                     TB_NewMark.Text = "NUMBERS ONLY";
             }
+            catch(MarkOutOfRangeException ex)
+            {
+                MessageBox.Show("Marks can only be between 1-10");
+            }
             
         }
 

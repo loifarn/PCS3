@@ -19,8 +19,16 @@ namespace Week4
             marks = new List<int>();
         }
 
-        public void AddMark(int mark) => marks.Add(mark);
+        public void AddMark(int mark)
+        {
+            if (mark < 1)
+                throw new MarkOutOfRangeException();
+            else if (mark > 10)
+                throw new MarkOutOfRangeException();
+            else
+                marks.Add(mark);
+        }
 
-        public int CalculateAverageMark() => (int)marks.Average();
+        public int CalculateAverageMark() =>(int)marks.Average();
     }
 }
