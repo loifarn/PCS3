@@ -16,7 +16,8 @@ namespace Week4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SimpleCalculator());
+            //Application.Run(new SimpleCalculator()); 
+            Application.Run(new MarksAnalyzer());
         }
     }
 }
