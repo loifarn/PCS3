@@ -22,28 +22,21 @@ namespace Week5
         private void Btn_Load_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             DialogResult result = ofd.ShowDialog();
             tfh = new TextFileHelper(ofd.FileName.ToString());
+            Lbl_File.Text = $"File: {ofd.FileName}"; 
 
             text = tfh.LoadFromFile();
             foreach(string s in text)
             {
                 RTB_Display.Text += $"{s}\n";
             }
-
-
         }
 
         private void Btn_Save_Click(object sender, EventArgs e)
         {
-            /*
-            foreach(string s in RTB_Display.Lines)
-            {
-                MessageBox.Show(s);
-            }*/
-            tfh.SaveToFile(new List<string>(RTB_Display.Lines));
-
-            
+            tfh.SaveToFile(new List<string>(RTB_Display.Lines));   
         }
     }
 }

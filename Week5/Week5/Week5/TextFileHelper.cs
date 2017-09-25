@@ -38,29 +38,18 @@ namespace Week5
 
         public List<string> LoadFromFile()
         {
-            MessageBox.Show($"Current file{FileName}");
-            FileStream fs = null;
-            StreamReader sr = null;
             List<string> list = new List<string>();
-            try
+
+            using (FileStream fs = new FileStream(FileName, FileMode.Open, FileAccess.Read))
             {
-                fs = new FileStream(FileName, FileMode.Open, FileAccess.Read);
-                sr = new StreamReader(fs);
+                StreamReader sr = new StreamReader(fs);
                 string s = "";
-                while(s != null)
+                
+                while(!sr.EndOfStream)
                 {
                     s = sr.ReadLine();
                     list.Add(s);
                 }
-            }
-            catch(IOException e)
-            {
-                MessageBox.Show("Error Reading file");
-            }
-            finally
-            {
-                if (sr != null)
-                    sr.Close();
             }
             return list;
         }
