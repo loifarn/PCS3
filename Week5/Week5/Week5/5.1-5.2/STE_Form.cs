@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Week5
 {
-    public partial class MainForm : Form
+    public partial class STE_Form : Form
     {
         private TextFileHelper tfh;
         private List<string> text;
-        public MainForm()
+        public STE_Form()
         {
             InitializeComponent();
         }

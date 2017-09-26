@@ -1,6 +1,6 @@
 ﻿namespace Week5
 {
-    partial class MainForm
+    partial class STE_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -81,7 +81,7 @@
             this.Btn_Save.UseVisualStyleBackColor = true;
             this.Btn_Save.Click += new System.EventHandler(this.Btn_Save_Click);
             // 
-            // MainForm
+            // STE_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,7 +91,7 @@
             this.Controls.Add(this.RTB_Display);
             this.Controls.Add(this.Lbl_Text);
             this.Controls.Add(this.Lbl_File);
-            this.Name = "MainForm";
+            this.Name = "STE_Form";
             this.Text = "Simple Text Editor";
             this.ResumeLayout(false);
             this.PerformLayout();
