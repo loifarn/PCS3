@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalShelterManager.Classes
 {
+    [Serializable]
     class Dog : Animal
     {
         private DateTime LastWalk;

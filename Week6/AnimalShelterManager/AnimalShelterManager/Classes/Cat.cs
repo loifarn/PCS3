@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalShelterManager.Classes
 {
+    [Serializable]
     class Cat : Animal
     {
         private string BadHabit;

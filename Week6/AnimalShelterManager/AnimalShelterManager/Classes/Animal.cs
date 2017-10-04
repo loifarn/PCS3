@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalShelterManager.Classes
 {
+    [Serializable]
     abstract class Animal
     {
         public int ChipNumber { get; set; }

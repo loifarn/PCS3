@@ -63,18 +63,23 @@
             this.tbNrWalksChipNr = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnNrWalks = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuSave = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbCat
             // 
             this.rbCat.AutoSize = true;
-            this.rbCat.Location = new System.Drawing.Point(28, 122);
+            this.rbCat.Location = new System.Drawing.Point(28, 142);
             this.rbCat.Name = "rbCat";
             this.rbCat.Size = new System.Drawing.Size(82, 17);
             this.rbCat.TabIndex = 39;
@@ -86,7 +91,7 @@
             // 
             this.rbDog.AutoSize = true;
             this.rbDog.Checked = true;
-            this.rbDog.Location = new System.Drawing.Point(29, 195);
+            this.rbDog.Location = new System.Drawing.Point(29, 215);
             this.rbDog.Name = "rbDog";
             this.rbDog.Size = new System.Drawing.Size(85, 17);
             this.rbDog.TabIndex = 38;
@@ -168,14 +173,14 @@
             // listBoxAnimals
             // 
             this.listBoxAnimals.FormattingEnabled = true;
-            this.listBoxAnimals.Location = new System.Drawing.Point(311, 45);
+            this.listBoxAnimals.Location = new System.Drawing.Point(311, 65);
             this.listBoxAnimals.Name = "listBoxAnimals";
             this.listBoxAnimals.Size = new System.Drawing.Size(470, 303);
             this.listBoxAnimals.TabIndex = 27;
             // 
             // btnShowInfoDogs
             // 
-            this.btnShowInfoDogs.Location = new System.Drawing.Point(654, 13);
+            this.btnShowInfoDogs.Location = new System.Drawing.Point(654, 33);
             this.btnShowInfoDogs.Name = "btnShowInfoDogs";
             this.btnShowInfoDogs.Size = new System.Drawing.Size(127, 29);
             this.btnShowInfoDogs.TabIndex = 26;
@@ -185,7 +190,7 @@
             // 
             // btnRemoveAnimal
             // 
-            this.btnRemoveAnimal.Location = new System.Drawing.Point(91, 367);
+            this.btnRemoveAnimal.Location = new System.Drawing.Point(91, 387);
             this.btnRemoveAnimal.Name = "btnRemoveAnimal";
             this.btnRemoveAnimal.Size = new System.Drawing.Size(112, 27);
             this.btnRemoveAnimal.TabIndex = 25;
@@ -195,7 +200,7 @@
             // 
             // btnShowInfoAllAnimals
             // 
-            this.btnShowInfoAllAnimals.Location = new System.Drawing.Point(521, 17);
+            this.btnShowInfoAllAnimals.Location = new System.Drawing.Point(521, 37);
             this.btnShowInfoAllAnimals.Name = "btnShowInfoAllAnimals";
             this.btnShowInfoAllAnimals.Size = new System.Drawing.Size(127, 23);
             this.btnShowInfoAllAnimals.TabIndex = 24;
@@ -205,7 +210,7 @@
             // 
             // btnCreateAnimal
             // 
-            this.btnCreateAnimal.Location = new System.Drawing.Point(82, 260);
+            this.btnCreateAnimal.Location = new System.Drawing.Point(82, 280);
             this.btnCreateAnimal.Name = "btnCreateAnimal";
             this.btnCreateAnimal.Size = new System.Drawing.Size(114, 23);
             this.btnCreateAnimal.TabIndex = 23;
@@ -223,7 +228,7 @@
             this.panel1.Controls.Add(this.tbName);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.dtpDateBroughtIn);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 32);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(290, 104);
             this.panel1.TabIndex = 43;
@@ -242,7 +247,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.tbExtraCatInfo);
-            this.panel2.Location = new System.Drawing.Point(11, 131);
+            this.panel2.Location = new System.Drawing.Point(11, 151);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(271, 45);
             this.panel2.TabIndex = 44;
@@ -261,7 +266,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.dtpLastWalkInThePark);
-            this.panel3.Location = new System.Drawing.Point(12, 205);
+            this.panel3.Location = new System.Drawing.Point(12, 225);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(290, 49);
             this.panel3.TabIndex = 45;
@@ -269,7 +274,7 @@
             // labelListBoxTitle
             // 
             this.labelListBoxTitle.AutoSize = true;
-            this.labelListBoxTitle.Location = new System.Drawing.Point(308, 22);
+            this.labelListBoxTitle.Location = new System.Drawing.Point(308, 42);
             this.labelListBoxTitle.Name = "labelListBoxTitle";
             this.labelListBoxTitle.Size = new System.Drawing.Size(83, 13);
             this.labelListBoxTitle.TabIndex = 46;
@@ -293,7 +298,7 @@
             // 
             // btnTakeDogForAWalk
             // 
-            this.btnTakeDogForAWalk.Location = new System.Drawing.Point(343, 464);
+            this.btnTakeDogForAWalk.Location = new System.Drawing.Point(343, 484);
             this.btnTakeDogForAWalk.Name = "btnTakeDogForAWalk";
             this.btnTakeDogForAWalk.Size = new System.Drawing.Size(134, 29);
             this.btnTakeDogForAWalk.TabIndex = 49;
@@ -321,7 +326,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.tbRemoveChipNr);
-            this.panel4.Location = new System.Drawing.Point(19, 314);
+            this.panel4.Location = new System.Drawing.Point(19, 334);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 47);
             this.panel4.TabIndex = 52;
@@ -349,7 +354,7 @@
             this.panel5.Controls.Add(this.tbWalkEmployee);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(311, 365);
+            this.panel5.Location = new System.Drawing.Point(311, 385);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(229, 83);
             this.panel5.TabIndex = 55;
@@ -359,7 +364,7 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.tbNrWalksChipNr);
             this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(554, 365);
+            this.panel6.Location = new System.Drawing.Point(554, 385);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(227, 83);
             this.panel6.TabIndex = 56;
@@ -382,18 +387,51 @@
             // 
             // btnNrWalks
             // 
-            this.btnNrWalks.Location = new System.Drawing.Point(593, 464);
+            this.btnNrWalks.Location = new System.Drawing.Point(593, 484);
             this.btnNrWalks.Name = "btnNrWalks";
             this.btnNrWalks.Size = new System.Drawing.Size(132, 23);
             this.btnNrWalks.TabIndex = 57;
             this.btnNrWalks.Text = "Get history of walks";
             this.btnNrWalks.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(846, 24);
+            this.menuStrip1.TabIndex = 58;
+            this.menuStrip1.Text = "AdminFormMenu";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuOpen,
+            this.MenuSave});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // MenuOpen
+            // 
+            this.MenuOpen.Name = "MenuOpen";
+            this.MenuOpen.Size = new System.Drawing.Size(152, 22);
+            this.MenuOpen.Text = "Open";
+            this.MenuOpen.Click += new System.EventHandler(this.MenuOpen_Click);
+            // 
+            // MenuSave
+            // 
+            this.MenuSave.Name = "MenuSave";
+            this.MenuSave.Size = new System.Drawing.Size(152, 22);
+            this.MenuSave.Text = "Save";
+            this.MenuSave.Click += new System.EventHandler(this.MenuSave_Click);
+            // 
             // AdministrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 507);
+            this.ClientSize = new System.Drawing.Size(846, 534);
             this.Controls.Add(this.btnNrWalks);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -410,6 +448,8 @@
             this.Controls.Add(this.btnRemoveAnimal);
             this.Controls.Add(this.btnShowInfoAllAnimals);
             this.Controls.Add(this.btnCreateAnimal);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "AdministrationForm";
             this.Text = "Administration Form - Animal Shelter";
             this.panel1.ResumeLayout(false);
@@ -424,6 +464,8 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,6 +508,10 @@
         private System.Windows.Forms.TextBox tbNrWalksChipNr;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnNrWalks;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuOpen;
+        private System.Windows.Forms.ToolStripMenuItem MenuSave;
     }
 }
 

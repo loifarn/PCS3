@@ -54,6 +54,7 @@
     <Compile Include="Classes\AnimalShelter.cs" />
     <Compile Include="Classes\Cat.cs" />
     <Compile Include="Classes\Dog.cs" />
+    <Compile Include="Classes\FileHelper.cs" />
     <Compile Include="Exceptions\AnimalCreationException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

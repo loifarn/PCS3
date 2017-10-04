@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 //Self-written
 using AnimalShelterManager.Classes;
 using AnimalShelterManager.Exceptions;
@@ -16,10 +18,16 @@ namespace AnimalShelterManager
     public partial class AdministrationForm : Form
     {
         private AnimalShelter animalShelter;
+        private FileHelper fileHelper;
         public AdministrationForm()
         {
             InitializeComponent();
-            animalShelter = new AnimalShelter("Best Animal Shelter", "111 222 333");
+            animalShelter = new AnimalShelter("Best Animal Shelter", "111 222 A333");/*
+            using (FileStream fs = new FileStream(new OpenFileDialog().ToString(), FileMode.OpenOrCreate, FileAccess.Read))
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.
+            }*/
         }
 
         private void btnCreateAnimal_Click(object sender, EventArgs e)
@@ -70,6 +78,39 @@ namespace AnimalShelterManager
             {
                 MessageBox.Show("You must enter an integer value for the chip number!");
             }
+        }
+
+        private void MenuOpen_Click(object sender, EventArgs e)
+        {
+            String filename = (new OpenFileDialog().FileName);
+
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.ShowDialog();
+                if (!ofd.FileName.Equals(""))
+                {
+                    filename = ofd.FileName;
+                }
+            }
+
+            fileHelper = new FileHelper(filename);
+            animalShelter.OurAnimals = fileHelper.LoadFromFile();
+        }
+
+        private void MenuSave_Click(object sender, EventArgs e)
+        {
+            String filename = (new OpenFileDialog().FileName);
+
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.ShowDialog();
+                if (!sfd.FileName.Equals(""))
+                {
+                    filename = sfd.FileName;
+                }
+            }
+            fileHelper = new FileHelper(filename);
+            fileHelper.SaveToFile(animalShelter.OurAnimals);
         }
     }
 }

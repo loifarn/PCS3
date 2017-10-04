@@ -11,11 +11,12 @@ using System.ComponentModel;
 
 namespace AnimalShelterManager.Classes
 {
+    
     class AnimalShelter
     {
         private string Name;
         private string TelephoneNumber;
-        private BindingList<Animal> OurAnimals;
+        public BindingList<Animal> OurAnimals { get; set; }
 
         public AnimalShelter(string name, string telephoneNumber)
         {
@@ -36,7 +37,6 @@ namespace AnimalShelterManager.Classes
                 throw new AnimalCreationException();
             }
         }
-
         //Overloading
         public void AddAnimal(int regNumber, string animal, DateTime brought, string name, string badHabit)
         {
@@ -45,6 +45,7 @@ namespace AnimalShelterManager.Classes
                 if (animal.Equals("cat") && !OurAnimals.Any(Animal => Animal.ChipNumber.Equals(regNumber)))
                 {
                     OurAnimals.Add(new Cat(regNumber, brought, name, badHabit));
+                    MessageBox.Show("New animal added");
                 }
                 else
                 {
