@@ -67,6 +67,7 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.tMPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -304,6 +305,7 @@
             this.btnTakeDogForAWalk.TabIndex = 49;
             this.btnTakeDogForAWalk.Text = "Take dog for a walk";
             this.btnTakeDogForAWalk.UseVisualStyleBackColor = true;
+            this.btnTakeDogForAWalk.Click += new System.EventHandler(this.btnTakeDogForAWalk_Click);
             // 
             // tbWalkChipNr
             // 
@@ -393,6 +395,7 @@
             this.btnNrWalks.TabIndex = 57;
             this.btnNrWalks.Text = "Get history of walks";
             this.btnNrWalks.UseVisualStyleBackColor = true;
+            this.btnNrWalks.Click += new System.EventHandler(this.btnNrWalks_Click);
             // 
             // menuStrip1
             // 
@@ -408,7 +411,8 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuOpen,
-            this.MenuSave});
+            this.MenuSave,
+            this.tMPToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
@@ -416,16 +420,23 @@
             // MenuOpen
             // 
             this.MenuOpen.Name = "MenuOpen";
-            this.MenuOpen.Size = new System.Drawing.Size(152, 22);
+            this.MenuOpen.Size = new System.Drawing.Size(103, 22);
             this.MenuOpen.Text = "Open";
             this.MenuOpen.Click += new System.EventHandler(this.MenuOpen_Click);
             // 
             // MenuSave
             // 
             this.MenuSave.Name = "MenuSave";
-            this.MenuSave.Size = new System.Drawing.Size(152, 22);
+            this.MenuSave.Size = new System.Drawing.Size(103, 22);
             this.MenuSave.Text = "Save";
             this.MenuSave.Click += new System.EventHandler(this.MenuSave_Click);
+            // 
+            // tMPToolStripMenuItem
+            // 
+            this.tMPToolStripMenuItem.Name = "tMPToolStripMenuItem";
+            this.tMPToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.tMPToolStripMenuItem.Text = "TMP";
+            this.tMPToolStripMenuItem.Click += new System.EventHandler(this.tMPToolStripMenuItem_Click);
             // 
             // AdministrationForm
             // 
@@ -512,6 +523,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuOpen;
         private System.Windows.Forms.ToolStripMenuItem MenuSave;
+        private System.Windows.Forms.ToolStripMenuItem tMPToolStripMenuItem;
     }
 }
 

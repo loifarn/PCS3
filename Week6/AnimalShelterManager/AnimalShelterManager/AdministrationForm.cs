@@ -112,5 +112,44 @@ namespace AnimalShelterManager
             fileHelper = new FileHelper(filename);
             fileHelper.SaveToFile(animalShelter.OurAnimals);
         }
+
+        private void tMPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DatabaseHelper dbh = new DatabaseHelper();
+            dbh.LoadShelterInfo(animalShelter);
+        }
+
+        private void btnTakeDogForAWalk_Click(object sender, EventArgs e)
+        {
+            int chipNr;
+            try
+            {
+                chipNr = Convert.ToInt32(tbWalkChipNr.Text);
+
+                DatabaseHelper dbh = new DatabaseHelper();
+                dbh.SaveDogWalk((Dog)animalShelter.FindAnimal(chipNr), tbWalkEmployee.Text);
+            }
+            catch(FormatException ex)
+            {
+                MessageBox.Show("You must enter an integer value for the chip number!");
+            }
+        }
+
+        private void btnNrWalks_Click(object sender, EventArgs e)
+        {
+            int chipNr;
+            try
+            {
+                chipNr = Convert.ToInt32(tbNrWalksChipNr.Text);
+
+                DatabaseHelper dbh = new DatabaseHelper();
+                //MessageBox.Show($"Number of walks: "+ dbh.GetNrWalks((Dog)animalShelter.FindAnimal(chipNr)));
+                MessageBox.Show(animalShelter.FindAnimal(chipNr).ToString());
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("You must enter an integer value for the chip number!");
+            }
+        }
     }
 }

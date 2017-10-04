@@ -9,7 +9,7 @@ namespace AnimalShelterManager.Classes
     [Serializable]
     class Dog : Animal
     {
-        private DateTime LastWalk;
+        public DateTime LastWalk { get; set; }
 
         public Dog(int regNum, DateTime brought, string name, DateTime lastWalk) : base(regNum, brought, name)
         {

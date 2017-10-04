@@ -14,8 +14,8 @@ namespace AnimalShelterManager.Classes
     
     class AnimalShelter
     {
-        private string Name;
-        private string TelephoneNumber;
+        public string Name { get; set; }
+        public string TelephoneNumber { get; set; }
         public BindingList<Animal> OurAnimals { get; set; }
 
         public AnimalShelter(string name, string telephoneNumber)
@@ -58,9 +58,9 @@ namespace AnimalShelterManager.Classes
             }
         }
 
-        public void FindAnimal(int regNumber)
+        public Animal FindAnimal(int regNumber)
         {
-            throw new NotImplementedException();
+            return OurAnimals[OurAnimals.IndexOf(OurAnimals.First(Animal => Animal.ChipNumber.Equals(regNumber)))];
         }
 
         public void Removeanimal(int regNumber)
@@ -81,5 +81,6 @@ namespace AnimalShelterManager.Classes
             }
             listBox.DataSource = dogs;
         }
+
     }
 }
